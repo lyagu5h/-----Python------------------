@@ -62,8 +62,9 @@ class BookNotAvailable(Exception):
 
 book1 = Book(title="War and Peace", author="Leo Tolstoy", year=1869, avaliable=True, categories=["Novel"])
 book2 = Book(title="The Lord of the Rings", author="J.R.R. Tolkien", year=1954, avaliable=True, categories=["Fantasy"])
-
-library = Library(books=[book1, book2], users=[ User(name="John", email="lazyboi@example.com", membership_id="123")])
+user1 = User(name="Jesse", email="p1nkman@example.com", membership_id="123");
+user2 = User(name="Jane", email="margoliz@example.com", membership_id="456");
+library = Library(books=[book1, book2], users=[user1, user2])
 
 library.add_book(book=Book(title="The Hobbit", author="J.R.R. Tolkien", year=1937, avaliable=True, categories=["Fantasy"]))
 
